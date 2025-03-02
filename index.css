@@ -1,0 +1,701 @@
+                                                        /* Navbar section */
+
+
+
+.navbar {
+    background-color: #222;
+    padding: 15px 40px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-right: 30px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #e5e3e3;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3361f7;
+}
+
+/* ✅ Category Dropdown Fix */
+.btn-group {
+    position: relative;
+}
+
+.btn-group .btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-group .dropdown-menu {
+    background-color: #3361f7;
+    border: none;
+    width: 180px;
+    text-align: center;
+}
+
+.dropdown-item {
+    color: white;
+    padding: 8px 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #2548c4;
+}
+
+/* ✅ Fix Responsive Dropdown */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn-group {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-group .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .btn-group .dropdown-menu {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-group {
+        width: 100%;
+    }
+
+    .btn-group .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .btn-group .dropdown-menu {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+
+
+
+
+                                                          /* Title Section */
+
+
+
+#section2 {
+    background-image: url(ceramic.jpg);
+    height: 500px; /* Set a fixed height */
+    background-repeat: no-repeat;
+    background-size: cover; /* Keeps image full-screen */
+    background-position: center;
+    background-attachment: fixed; /* Keeps it static while scrolling */
+    text-align: center;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* Title Styling */
+.inner-box h1 {
+    font-size: 6vw; /* Responsive */
+    font-weight: bold;
+    color: #ffd700; /* Bright yellow for strong contrast */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); 
+}
+
+/* Subtitle Styling */
+/* Subtitle Styling */
+.inner-box p {
+    font-size: 3vw;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #ff5733; /* Bright Orange */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* Strong shadow for better readability */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1040px) {
+    .inner-box h1 {
+        font-size: 7vw;
+    }
+    .inner-box p {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-box h1 {
+        font-size: 8vw;
+    }
+    .inner-box p {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .inner-box h1 {
+        font-size: 60px;
+    }
+    .inner-box p {
+        font-size: 40px;
+    }
+}
+
+
+                                                             /* Service Section */
+
+
+
+#section3{
+    padding-top: 100px;
+  }
+  .inner-box1{
+    min-height: 270px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: baseline;
+    margin-bottom: 15px;
+  }
+  .text-success{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-30px);
+    display: inline-block;
+    padding: 0px 16px;
+    font-family: popins;
+    font-size: 20px;
+  }
+  .text-danger{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-30px);
+    display: inline-block;
+    padding: 0px 16px;
+    font-family: popins;
+    font-size: 20px;
+  }
+  .text-info{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-30px);
+    display: inline-block;
+    padding: 0px 16px;
+    font-family: popins;
+    font-size: 20px;
+  }
+  .text-muted{
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-30px);
+    display: inline-block;
+    padding: 0px 16px;
+    font-family: popins;
+    font-size: 20px;
+  }
+
+
+
+                                                        /* Customer Section */
+
+
+  #section4{
+  
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+  }
+  .performance img {
+    max-width: 100%;
+    height: auto;
+  }
+  .performance{
+    text-align: center;
+    min-height: 270px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  .supportline{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .customerline{
+    color: white;
+    margin-left: 20px;
+    text-align: justify;
+  }
+   .customers img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+  
+   }
+   .ratingline{
+    color: white;
+    margin-left: 130px;
+    margin-top: 5px;
+   }
+  .review img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 200px;
+  }
+
+
+                                                         /* Support Section */
+
+
+
+  #hours {
+    background-image: url('mechanic.jpg'); /* Replace with your background image path */
+   
+    min-height: 550px;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+   
+  }
+  .sprt{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: -60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 30px;
+  }
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin:  auto;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    padding-bottom: 50px;
+  }
+
+  /* SVG circle background */
+  .circle-background {
+    fill: none;
+    stroke: #f3f3f3;
+    stroke-width: 10;
+  }
+
+  /* SVG circle for progress */
+  .circle-progress {
+    fill: none;
+    stroke: #95ff00;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transform: rotate(-90deg); /* To start progress from top */
+    transform-origin: 50% 50%;
+    stroke-dasharray: 314; /* Full circumference */
+    stroke-dashoffset: 314; /* Initially 100% */
+    transition: stroke-dashoffset 1s ease-out; /* Smooth transition */
+  }
+
+  /* Center text */
+  .circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+  }
+
+  /* Section to trigger the scroll animation */
+  .progress-section {
+    height: 800px;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  #progress1{
+    text-align: center;
+    align-items: end;
+    margin: auto;
+    justify-content: center;
+  }
+  #progress2{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+  #sec1{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #sec2{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #sec3{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-label{
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    fill: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  .sprt-lines{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-size: 16px;
+    margin-top: -40px;
+  }
+ 
+
+
+
+
+                                           /* Awards Section */
+
+
+#section5{
+  
+    min-height: 450px;
+  background-color: rgb(212, 212, 212);
+  }
+  .display-3{
+    padding-top: 50px;
+  }
+  .h1{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .display-3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* padding-top: 50px; */
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+  .Awards{
+    text-align: center;
+    font-size: 20px;
+   
+     text-align: center; 
+    height: 300px;
+    
+  }
+  .awardstext{
+    align-items: center;
+    text-align: center; 
+  }
+  .Awards2{
+    
+    text-align: center;
+  }
+  .award2{
+     text-align: center;
+  }
+
+
+
+                                             /* Review Section */
+
+#section6{
+  background-color: #f4f4f4;
+}
+.testimonial {
+  padding: 15px;
+  width: 100%;
+  min-height: 250px;
+  background-color: #f5f5f688;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.author {
+  margin-top: 20px;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.author-role {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+.display-5{
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+
+                                         /* Company Logo Section */
+#section7{
+  background-color: #f4f4f4;
+}
+
+.brand{
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+                                             /* Footer Section  */
+
+
+footer {
+  background-color: black;
+  margin-top: 20px;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px; /* Ensures columns don’t shrink too much */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Heading Styling */
+.infoheading {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Paragraph Styling */
+.infopara {
+  color: #dddddd;
+  font-size: 16px;
+}
+
+/* Contact Box Styling */
+.contactbox2 {
+  margin-top: 20px;
+  color: #dddddd;
+}
+
+/* Contact Number Styling */
+.number {
+  font-size: 14px;
+}
+
+/* Email Styling */
+.mail {
+  color: white;
+  font-size: 18px;
+}
+.contactpara{
+    color: #dddddd;
+}
+
+/* Social Media Icons */
+.icon {
+  margin-top: 20px;
+}
+
+.icon img {
+  margin: 5px;
+}
+
+/* Terms and Copyright */
+.terms,
+.copyright,
+.powered {
+  color: #6e6e6e;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ---- Responsive Adjustments ---- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoheading {
+    font-size: 16px;
+  }
+
+  .infopara {
+    font-size: 14px;
+  }
+
+  .number,
+  .mail {
+    font-size: 13px;
+  }
+}
+
+/* Small Screens (480px and below) */
+@media (max-width: 480px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  .infoheading {
+    font-size: 14px;
+  }
+
+  .infopara {
+    font-size: 13px;
+  }
+
+  .number,
+  .mail {
+    font-size: 12px;
+  }
+
+  .icon img {
+    height: 25px;
+  }
+
+  .terms,
+  .copyright,
+  .powered {
+    font-size: 12px;
+  }
+}
+
+  
+    /* Container for the circular progress */
+    
+      
+  
+
+
+
+
+
